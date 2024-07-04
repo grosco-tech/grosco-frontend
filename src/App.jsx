@@ -7,17 +7,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import { Component } from "./components/Component";
+import { Home } from "./components/Home";
 import Layout from "./Layout";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Component />}></Route>
+          <Route index element={<Home />}></Route>
           <Route path="about" element={<About />}></Route>
+          <Route path="contact" element={<Contact />}></Route>
         </Route>
       </>,
     ),

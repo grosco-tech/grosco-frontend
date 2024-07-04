@@ -22,7 +22,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 
-export function Component() {
+export function Home() {
   return (
     <div className="flex min-h-[100dvh] flex-col">
       <section className="bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-no-repeat py-20">
