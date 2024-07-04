@@ -26,7 +26,7 @@ export function Component() {
   return (
     <div className='flex flex-col min-h-[100dvh]'>
       <header className='bg-primary text-primary-foreground py-4'>
-        <div className='container flex items-center justify-between'>
+        <div className='container mx-auto flex items-center justify-between'>
           <Link to='#' className='flex items-center gap-2'>
             <ShoppingCartIcon className='h-6 w-6' />
             <span className='text-lg font-semibold'>Zeptone</span>
@@ -62,7 +62,7 @@ export function Component() {
         </div>
       </header>
       <section className="bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-no-repeat py-20">
-        <div className='container flex flex-col items-center justify-center text-center text-white'>
+        <div className='container mx-auto flex flex-col items-center justify-center text-center text-white'>
           <h1 className='text-4xl font-bold mb-4'>
             Freshness Delivered to Your Doorstep
           </h1>
@@ -83,7 +83,7 @@ export function Component() {
         </div>
       </section>
       <section className='bg-background py-12 md:py-20'>
-        <div className='container'>
+        <div className='container mx-auto'>
           <h2 className='text-2xl font-bold mb-8'>Featured Categories</h2>
           <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6'>
             <Link to='#' className='flex flex-col items-center space-y-2'>
@@ -126,7 +126,7 @@ export function Component() {
         </div>
       </section>
       <section className='bg-muted py-12 md:py-20'>
-        <div className='container'>
+        <div className='container mx-auto'>
           <h2 className='text-2xl font-bold mb-8'>Featured Products</h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
             <Card>
@@ -197,7 +197,7 @@ export function Component() {
         </div>
       </section>
       <section className='bg-background py-12 md:py-20'>
-        <div className='container'>
+        <div className='container mx-auto'>
           <h2 className='text-2xl font-bold mb-8'>How It Works</h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
             <div className='flex flex-col items-center space-y-4'>
@@ -226,7 +226,7 @@ export function Component() {
         </div>
       </section>
       <footer className='bg-muted py-6 text-sm text-muted-foreground'>
-        <div className='container flex flex-col items-center justify-between gap-4 sm:flex-row'>
+        <div className='container mx-auto flex flex-col items-center justify-between gap-4 sm:flex-row'>
           <nav className='flex flex-wrap items-center gap-4'>
             <Link to='#' className='hover:underline'>
               Home
