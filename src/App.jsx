@@ -1,4 +1,4 @@
-//import './App.css';
+import './App.css';
 
 import {
   Route,
@@ -7,17 +7,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import { Component } from "./components/Component";
+import Home from "./components/Home";
 import Layout from "./Layout";
 import About from "./components/About";
+import TermsCondition from './components/TermsCondition';
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Component />}></Route>
+          <Route index element={<Home />}></Route>
           <Route path="about" element={<About />}></Route>
+          <Route path="terms" element={<TermsCondition />}></Route>
         </Route>
       </>,
     ),
