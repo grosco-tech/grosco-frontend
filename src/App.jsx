@@ -1,4 +1,4 @@
-//import './App.css';
+import './App.css';
 
 import {
   Route,
@@ -7,9 +7,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import { Home } from "./components/Home";
+import Home from "./components/Home";
 import Layout from "./Layout";
 import About from "./components/About";
+import TermsCondition from './components/TermsCondition';
 import Contact from "./components/Contact";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}></Route>
           <Route path="about" element={<About />}></Route>
+          <Route path="terms" element={<TermsCondition />}></Route>
           <Route path="contact" element={<Contact />}></Route>
         </Route>
       </>,

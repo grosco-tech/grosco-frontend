@@ -1,154 +1,128 @@
-const About = () => {
+
+import { Link } from "react-router-dom";
+import { Card } from "@/components/ui/card"
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+
+export default function Aboutus() {
   return (
-    <section className="bg-background py-12 md:py-20">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div className="space-y-6">
-            <div>
-              <h1 className="mb-4 text-3xl font-bold">About Grosco</h1>
-              <p className="text-muted-foreground">
-                Welcome to Grocso, your reliable and efficient grocery delivery
-                service designed to bring the freshest products right to your
-                doorstep. At Grocso, we believe that grocery shopping should be
-                simple, convenient, and time-saving. Inspired by the needs of
-                modern households and the pace of urban life, we aim to redefine
-                how you shop for groceries.
-              </p>
+    <div className="flex flex-col min-h-[100dvh]">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+            <div className="flex flex-col justify-center space-y-4">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">About Our Company</h1>
+                <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                  We are a dedicated team committed to simplifying grocery shopping with innovative solutions that prioritize convenience and quality.
+                </p>
+              </div>
+              <Link
+                href="#"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                prefetch={false}
+              >
+                Learn More
+              </Link>
             </div>
-            <div>
-              <h2 className="mb-4 text-2xl font-bold">Our Mission</h2>
-              <p className="text-muted-foreground">
-                Our mission at Grocso is to provide an unmatched grocery
-                shopping experience that combines convenience, quality, and
-                affordability. We are committed to delivering fresh produce,
-                everyday essentials, and specialty items with speed and
-                precision, ensuring that your pantry is always stocked with the
-                best.
-              </p>
-            </div>
-            <div>
-              <h2 className="mb-4 text-2xl font-bold">What We Offer</h2>
-              <ul className="list-disc space-y-2 pl-6 text-muted-foreground">
-                <li>
-                  <h2 className="text-lg font-bold">
-                    Wide Selection of Products
-                  </h2>
-                  <p className="text-muted-foreground">
-                    From farm-fresh fruits and vegetables to pantry staples,
-                    dairy products, and household essentials, Grocso offers a
-                    comprehensive range of items to meet all your grocery needs.
-                  </p>
-                </li>
-                <li>
-                  <h2 className="text-lg font-bold">Freshness Guaranteed</h2>
-                  <p className="text-muted-foreground">
-                    We partner with trusted local farmers, suppliers, and brands
-                    to ensure that every product we deliver meets our high
-                    standards of quality and freshness.
-                  </p>
-                </li>
-                <li>
-                  <h2 className="text-lg font-bold">
-                    Fast and Reliable Delivery
-                  </h2>
-                  <p className="text-muted-foreground">
-                    With our state-of-the-art logistics and dedicated delivery
-                    team, we guarantee quick and reliable delivery right to your
-                    doorstep. Choose a delivery time that suits your schedule,
-                    and leave the rest to us.
-                  </p>
-                </li>
-                <li>
-                  <h2 className="text-xl font-bold">
-                    User-Friendly Experience
-                  </h2>
-                  <p className="text-muted-foreground">
-                    Our easy-to-navigate app and website make shopping for
-                    groceries a breeze. Enjoy a seamless ordering process,
-                    secure payment options, and real-time order tracking.
-                  </p>
-                </li>
-                <li>
-                  <h2 className="text-xl font-bold">Eco-Friendly Practices </h2>
-                  <p className="text-muted-foreground">
-                    {" "}
-                    Grocso is committed to sustainability. We use eco-friendly
-                    packaging and aim to reduce our carbon footprint by
-                    optimizing delivery routes and supporting local producers.
-                  </p>
-                </li>
-              </ul>
-            </div>
+            <img
+              src="https://generated.vusercontent.net/placeholder.svg"
+              alt="About Us"
+              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
+            />
           </div>
-          <div className="space-y-6">
+        </div>
+      </section>
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div>
-              <h2 className="mb-4 text-2xl font-bold">Our Values</h2>
-              <ul className="list-disc space-y-2 pl-6 text-muted-foreground">
-                <li>
-                  <h2 className="text-xl font-bold">Customer Satisfaction</h2>
-                  <p className="text-muted-foreground">
-                    Your satisfaction is our top priority. We strive to provide
-                    excellent customer service, from the moment you place your
-                    order to the time it is delivered.
-                  </p>
-                </li>
-                <li>
-                  <h2 className="text-xl font-bold">Quality Assurance</h2>
-                  <p className="text-muted-foreground">
-                    We believe in delivering only the best. Every product is
-                    carefully selected and inspected to ensure it meets our
-                    quality standards.
-                  </p>
-                </li>
-                <li>
-                  <h2 className="text-xl font-bold">Innovation</h2>
-                  <p className="text-muted-foreground">
-                    We continually innovate to improve our service,
-                    incorporating the latest technology and listening to
-                    customer feedback to enhance your shopping experience.
-                  </p>
-                </li>
-                <li>
-                  <h2 className="text-xl font-bold">Community Focus</h2>
-                  <p className="text-muted-foreground">
-                    Grocso supports local communities by sourcing products from
-                    local farmers and suppliers. We believe in building strong
-                    relationships with our partners and customers.
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-4 text-2xl font-bold">
-                Join the Grocso Family
-              </h2>
-              <p className="text-muted-foreground">
-                Experience the future of grocery shopping with Grocso. Download
-                our app or visit our website to start your order today. Whether
-                you&apos;re stocking up for the week or need a last-minute item,
-                Grocso is here to make your life easier, one delivery at a time.
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Story</h2>
+              <p className="mt-4 text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Welcome to Grosco, where convenience meets quality right at your doorstep. Founded in December 2023,
+                our journey began with a simple yet powerful idea: to transform the way people experience grocery shopping.
+              </p>
+              <p className="mt-4 text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                It all started with a shared frustration—endless queues, crowded aisles, and wasted time. Determined to make a difference,
+                our founders set out to create a service that would not only save time but also enhance the overall shopping experience.
+              </p>
+              <p className="mt-4 text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Since our humble beginnings, we have grown rapidly, expanding our range of products and perfecting our delivery services.
+                Through continuous innovation and listening to our customers' feedback, we have developed a platform that prioritizes reliability, convenience, and customer satisfaction
               </p>
             </div>
-
             <div>
-              <h2 className="mb-4 text-2xl font-bold">Our Team</h2>
-              <p className="text-muted-foreground">
-                Our team of dedicated professionals is passionate about
-                providing our customers with the best possible experience. From
-                our sourcing experts to our delivery drivers, we are committed
-                to excellence in every aspect of our business.
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Mission</h2>
+              <p className="mt-4 text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                From day one, our mission has been clear: to provide a seamless and personalized grocery shopping experience that fits into the busy lives of our customers.
+                We believe that everyone deserves access to fresh, high-quality products without the hassle of traditional shopping.
               </p>
             </div>
           </div>
         </div>
-        <div>
-          <h2 className="mb-10 mt-24 text-4xl font-bold">
-            Thank you for choosing Grocso – where convenience meets quality.
-          </h2>
+      </section>
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <div className="container mx-auto px-4 md:px-6">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet Our Team</h2>
+          <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <Card className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-background p-6 text-center">
+              <Avatar className="h-20 w-20">
+                <AvatarImage src="/placeholder-user.jpg" />
+                <AvatarFallback>JD</AvatarFallback>
+              </Avatar>
+              <div className="space-y-1">
+                <h3 className="text-lg font-medium">John Doe</h3>
+                <p className="text-sm text-muted-foreground">CEO</p>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                John is the founder and CEO of our company. He has over 15 years of experience in the tech industry and
+                is passionate about building innovative solutions.
+              </p>
+            </Card>
+            <Card className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-background p-6 text-center">
+              <Avatar className="h-20 w-20">
+                <AvatarImage src="/placeholder-user.jpg" />
+                <AvatarFallback>JA</AvatarFallback>
+              </Avatar>
+              <div className="space-y-1">
+                <h3 className="text-lg font-medium">Jane Appleseed</h3>
+                <p className="text-sm text-muted-foreground">CTO</p>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Jane is our Chief Technology Officer. She has a deep understanding of software engineering and is
+                committed to driving innovation in our products.
+              </p>
+            </Card>
+            <Card className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-background p-6 text-center">
+              <Avatar className="h-20 w-20">
+                <AvatarImage src="/placeholder-user.jpg" />
+                <AvatarFallback>SM</AvatarFallback>
+              </Avatar>
+              <div className="space-y-1">
+                <h3 className="text-lg font-medium">Sarah Musk</h3>
+                <p className="text-sm text-muted-foreground">COO</p>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Sarah is our Chief Operating Officer. She has a proven track record of building efficient and scalable
+                operations, and is passionate about creating a great work environment for our team.
+              </p>
+            </Card>
+            <Card className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-background p-6 text-center">
+              <Avatar className="h-20 w-20">
+                <AvatarImage src="/placeholder-user.jpg" />
+                <AvatarFallback>MJ</AvatarFallback>
+              </Avatar>
+              <div className="space-y-1">
+                <h3 className="text-lg font-medium">Michael Johnson</h3>
+                <p className="text-sm text-muted-foreground">VP of Engineering</p>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Michael is our Vice President of Engineering. He has over a decade of experience leading high-performing
+                engineering teams and is passionate about building scalable and reliable systems.
+              </p>
+            </Card>
+          </div>
         </div>
-      </div>
-    </section>
-  );
-};
-
-export default About;
+      </section>
+    </div>
+  )
+}

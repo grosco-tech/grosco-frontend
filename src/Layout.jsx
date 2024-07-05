@@ -1,55 +1,17 @@
-// This is the root layout component for your Next.js app.
-// Learn more: https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required
-// import { Inter } from 'next/font/google';
+
 import { cn } from "@/lib/utils";
 import "./index.css";
 import { Link, Outlet } from "react-router-dom";
 import { Button } from "./components/ui/button";
-
-// const fontHeading = Inter({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-heading',
-// });
-
-// const fontHeading = {
-//   subsets: ["latin"],
-//   display: "swap",
-//   variable: "--font-heading",
-// };
-
-// const fontBody = Inter({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-body',
-// });
-
-// const fontBody = {
-//   subsets: ["latin"],
-//   display: "swap",
-//   variable: "--font-body",
-// };
-
-// export default function Layout() {
-//   return (
-//     <>
-//       <div
-//         className={cn("antialiased", fontHeading.variable, fontBody.variable)}
-//       >
-//         <Outlet />
-//       </div>
-//     </>
-//   );
-// }
+import logo from "@/assets/logo.svg";
 
 export default function Layout() {
   return (
     <>
-      <header className="bg-primary py-4 text-primary-foreground">
+      <header className="bg-secondary py-4 text-secondary-foreground">
         <div className="container mx-auto flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <ShoppingCartIcon className="h-6 w-6" />
-            <span className="text-lg font-semibold">Grosco</span>
+            <img src={logo} alt="Grosco" className="h-15 w-28" />
           </Link>
           <nav className="flex items-center gap-4">
             <Link to="#" className="hover:underline">
@@ -88,14 +50,14 @@ export default function Layout() {
             <Link to="/" className="hover:underline">
               Home
             </Link>
-            <Link to="shop" className="hover:underline">
+            {/* <Link to="shop" className="hover:underline">
               Shop
-            </Link>
+            </Link> */}
             <Link to="about" className="hover:underline">
               About
             </Link>
-            <Link to="contact" className="hover:underline">
-              Contact
+            <Link to="terms" className="hover:underline">
+              Terms
             </Link>
           </nav>
           <div className="flex items-center gap-4">
@@ -109,7 +71,7 @@ export default function Layout() {
               <InstagramIcon className="h-5 w-5" />
             </Link>
           </div>
-          <p>&copy; 2024 Zeptone. All rights reserved.</p>
+          <p>&copy; 2024 Grosco. All rights reserved.</p>
         </div>
       </footer>
     </>
