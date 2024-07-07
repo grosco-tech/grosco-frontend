@@ -23,10 +23,10 @@ RUN pnpm run build
 FROM nginx:alpine
 
 # Remove the default NGINX configuration file
-RUN rm /etc/nginx/conf.d/default.conf
+RUN rm /etc/nginx/conf.d/*
 
 # Copy the NGINX configuration file
-COPY nginx.conf /etc/nginx/conf.d
+COPY ./default.conf /etc/nginx/conf.d
 
 # Copy the build output to the NGINX html directory
 COPY --from=0 /app/dist /usr/share/nginx/html
