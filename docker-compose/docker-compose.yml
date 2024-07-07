@@ -2,5 +2,9 @@ version: "3.4"
 services:
   grosco-frontend:
     build: ../
-  ports:
-    - 80:80
+    ports:
+      - 3000:80
+  nginx:
+    build: ../nginx
+    ports:
+      - 80:80
