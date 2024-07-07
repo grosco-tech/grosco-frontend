@@ -2,4 +2,5 @@ version: "3.4"
 services:
   grosco-frontend:
     build: ../
-  
+  ports:
+    - 80:80
