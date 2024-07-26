@@ -1,10 +1,35 @@
 version: "3.4"
 services:
-  grosco-frontend:
+  grosco-frontend-1:
     build: ../
     ports:
       - 3000:80
+
+  grosco-frontend-2:
+    build: ../
+    ports:
+      - 3001:80
+
   nginx:
     build: ../nginx
     ports:
       - 80:80
+      - 443:443
+    restart: always
+    depends_on:
+      - grosco-frontend-1
+      - grosco-frontend-2
+    volumes:
+      - ./certbot/conf:/etc/nginx/ssl:ro
+      - ./certbot/www:/var/www/certbot:ro
+
+    command: >
+      /bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g "daemon off;"'
+
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www:/var/www/certbot:rw
+      - ./certbot/conf:/etc/letsencrypt:rw
+    entrypoint: >
+      /bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'
