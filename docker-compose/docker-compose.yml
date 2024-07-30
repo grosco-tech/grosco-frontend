@@ -23,4 +23,5 @@ services:
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
       - /var/lib/letsencrypt:/var/lib/letsencrypt
-    command: certbot certonly --webroot-path -w /usr/share/nginx/html -d grosco.in --email herock76@gmail.com --agree-tos --no-eff-email --keep-until-expiring -v
+    command: certbot --nginx
+  #   command: certbot certonly --webroot-path -w /usr/share/nginx/html -d grosco.in --email herock76@gmail.com --agree-tos --no-eff-email --keep-until-expiring -v
