@@ -6,6 +6,20 @@ services:
       - 3000:80
   nginx:
     build: ../nginx
+    depends_on: 
+      - grosco-frontend
+      - certbot
+    restart: unless-stopped
     ports:
       - 80:80
       - 443:443
+    volumes:
+      - ../nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./etc/letsencrypt:/etc/letsencrypt
+      - ./var/lib/letsencrypt:/var/lib/letsencrypt
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./etc/letsencrypt:/etc/letsencrypt
+      - ./var/lib/letsencrypt:/var/lib/letsencrypt
+    command: certonly --webroot -w /var/lib/letsencrypt --keep-until-expiring --email herock76@gmail.com -d grosco.in --agree-tos
