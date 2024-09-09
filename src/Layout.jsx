@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import "./index.css";
 import { Link, Outlet } from "react-router-dom";
@@ -58,6 +57,9 @@ export default function Layout() {
             </Link>
             <Link to="terms" className="hover:underline">
               Terms
+            </Link>
+            <Link to="privacy" className="hover:underline">
+              Privacy Policy
             </Link>
           </nav>
           <div className="flex items-center gap-4">
