@@ -468,37 +468,62 @@ const TermsOfService = () => {
               by contacting them in writing at 400 R Street, Sacramento, CA
               95814, or by telephone at (800) 952-5210.
             </p>
-            <h3 className="mb-4 mt-2 text-xl font-bold">Right to Waive.</h3>
+            <h3 className="mb-4 mt-2 text-xl font-bold">
+              Electronic Communications.
+            </h3>
             <p>
-              Any or all of the rights and limitations set forth in this
-              Arbitration Agreement may be waived by the party against whom the
-              claim is asserted. Such waiver shall not waive or affect any other
-              portion of this Arbitration Agreement.
+              The communications between you and Company use electronic means,
+              whether you use the Site or send us emails, or whether Company
+              posts notices on the Site or communicates with you via email. For
+              contractual purposes, you (a) consent to receive communications
+              from Company in an electronic form; and (b) agree that all terms
+              and conditions, agreements, notices, disclosures, and other
+              communications that Company provides to you electronically satisfy
+              any legal obligation that such communications would satisfy if it
+              were be in a hard copy writing.
             </p>
-            <h3 className="mb-4 mt-2 text-xl font-bold">Right to Waive.</h3>
+            <h3 className="mb-4 mt-2 text-xl font-bold">Entire Terms.</h3>
             <p>
-              Any or all of the rights and limitations set forth in this
-              Arbitration Agreement may be waived by the party against whom the
-              claim is asserted. Such waiver shall not waive or affect any other
-              portion of this Arbitration Agreement.
+              These Terms constitute the entire agreement between you and us
+              regarding the use of the Site. Our failure to exercise or enforce
+              any right or provision of these Terms shall not operate as a
+              waiver of such right or provision. The section titles in these
+              Terms are for convenience only and have no legal or contractual
+              effect. The word “including” means “including without limitation”.
+              If any provision of these Terms is held to be invalid or
+              unenforceable, the other provisions of these Terms will be
+              unimpaired and the invalid or unenforceable provision will be
+              deemed modified so that it is valid and enforceable to the maximum
+              extent permitted by law. Your relationship to Company is that of
+              an independent contractor, and neither party is an agent or
+              partner of the other. These Terms, and your rights and obligations
+              herein, may not be assigned, subcontracted, delegated, or
+              otherwise transferred by you without Company’s prior written
+              consent, and any attempted assignment, subcontract, delegation, or
+              transfer in violation of the foregoing will be null and void.
+              Company may freely assign these Terms. The terms and conditions
+              set forth in these Terms shall be binding upon assignees.
             </p>
-            <h3 className="mb-4 mt-2 text-xl font-bold">Right to Waive.</h3>
+            <br />
             <p>
-              Any or all of the rights and limitations set forth in this
-              Arbitration Agreement may be waived by the party against whom the
-              claim is asserted. Such waiver shall not waive or affect any other
-              portion of this Arbitration Agreement.
+              Please read our{" "}
+              <a
+                href="https://grosco.in/privacy"
+                className="text-blue-600 visited:text-purple-600"
+              >
+                Privacy Policy.
+              </a>
             </p>
-          </section>
-
-          <section>
-            <h2 className="mb-4 text-2xl font-bold">Dispute Resolution</h2>
-            <div className="prose text-foreground">
-              <p>
-                Please read this Arbitration Agreement carefully. It is part of
-                your contract with the company.
-              </p>
-            </div>
+            <h3 className="mb-4 mt-2 text-xl font-bold">
+              Copyright/Trademark Information.
+            </h3>
+            <p>
+              Copyright ©Grosco. All rights reserved. All trademarks, logos and
+              service marks displayed on the Site are our property or the
+              property of other third-parties. You are not permitted to use
+              these Marks without our prior written consent or the consent of
+              such third party which may own the Marks
+            </p>
           </section>
 
           <section>
